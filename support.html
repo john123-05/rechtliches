@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support | Liftpictures Fotosysteme</title>
+  <meta name="description" content="Support und Hilfe für die App- und Webdienste von Liftpictures Fotosysteme." />
+  <link rel="stylesheet" href="legal.css" />
+</head>
+<body>
+  <main class="container" id="hauptinhalt">
+    <header>
+      <p class="legal-nav" aria-label="Rechtliche Navigation">
+        <a href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+        <span aria-hidden="true">|</span>
+        <a href="support.html" aria-current="page">Support</a>
+      </p>
+      <h1>Support</h1>
+      <p class="muted">Liftpictures Fotosysteme</p>
+      <p>Bei Fragen zur Nutzung der App unterstützt unser Service-Team über die folgenden Kontaktwege.</p>
+    </header>
+
+    <section>
+      <h2>1. Kontaktmöglichkeiten</h2>
+      <ul>
+        <li><strong>E-Mail:</strong> <a href="mailto:info@liftpictures.com">info@liftpictures.com</a></li>
+        <li><strong>Telefon:</strong> <a href="tel:+495222850490">+49 5222 8504-90</a></li>
+        <li><strong>Servicezeiten:</strong> Mo-Fr 08:30-17:00, Sa 09:00-12:00</li>
+      </ul>
+
+      <form
+        class="support-form"
+        id="support-form"
+        aria-label="Supportformular"
+        method="post"
+        action="https://hook.eu2.make.com/xdgc1v8toi0ai21lh3gip3potv4i7joa"
+      >
+        <h3>Supportanfrage (optional)</h3>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+
+        <label for="nachricht">Nachricht</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+
+        <input type="hidden" name="quelle" value="support.html" />
+        <input type="hidden" name="webseite" value="www.liftpictures.com" />
+        <input type="hidden" id="submitted_at" name="submitted_at" value="" />
+
+        <button type="submit" id="support-submit">Anfrage senden</button>
+        <p id="support-status" class="muted" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>2. Reaktionszeit</h2>
+      <p>Unser Team antwortet in der Regel innerhalb von <strong>24-48 Stunden an Werktagen</strong>.</p>
+    </section>
+
+    <section>
+      <h2>3. Troubleshooting-Hinweise</h2>
+      <ul>
+        <li><strong>Login-Probleme:</strong> Zugangsdaten prüfen, Passwort-Reset ausführen und E-Mail-Eingang kontrollieren.</li>
+        <li><strong>Synchronisation:</strong> Internetverbindung prüfen, App neu starten und kurze Zeit später erneut versuchen.</li>
+        <li><strong>Benachrichtigungen:</strong> Berechtigungen auf Geräte- und App-Ebene kontrollieren.</li>
+        <li><strong>App-Version/Update:</strong> Sicherstellen, dass die aktuelle Version installiert ist.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Eskalation bei kritischen Betriebsstörungen</h2>
+      <p>
+        Bei kritischen Störungen des laufenden Betriebs kontaktieren Sie uns bitte umgehend telefonisch und übermitteln
+        Sie betroffene Konten, Zeitpunkt und Fehlerbild, damit eine priorisierte Prüfung erfolgen kann.
+      </p>
+      <p class="muted">Hinweis: Es wird keine sofortige Lösungsgarantie zugesagt.</p>
+    </section>
+
+    <section>
+      <h2>5. Datenschutz</h2>
+      <p>
+        Informationen zur Verarbeitung personenbezogener Daten finden Sie in der
+        <a href="datenschutzerklaerung.html">Datenschutzerklärung</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Liftpictures Fotosysteme</strong> | Lehmkuhlstr. 18, 32108 Bad Salzuflen, Deutschland</p>
+      <p>
+        Telefon: <a href="tel:+495222850490">+49 5222 8504-90</a> |
+        E-Mail: <a href="mailto:info@liftpictures.com">info@liftpictures.com</a> |
+        Web: <a href="https://www.liftpictures.com" rel="noopener">www.liftpictures.com</a>
+      </p>
+      <p>
+        Servicezeiten: Mo-Fr 08:30-17:00, Sa 09:00-12:00 |
+        Amtsgericht Lemgo, HRB 6664 |
+        USt-IdNr.: DE814667627 |
+        Verantwortlich: Tom Nolting
+      </p>
+      <p class="legal-nav" aria-label="Rechtliche Links im Footer">
+        <a href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+        <span aria-hidden="true">|</span>
+        <a href="support.html" aria-current="page">Support</a>
+      </p>
+      <p>
+        <a class="lang-btn" href="support-en.html" lang="en">English</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var form = document.getElementById("support-form");
+      var submitButton = document.getElementById("support-submit");
+      var status = document.getElementById("support-status");
+      var submittedAt = document.getElementById("submitted_at");
+      var webhookUrl = "https://hook.eu2.make.com/xdgc1v8toi0ai21lh3gip3potv4i7joa";
+
+      if (!form || !submitButton || !status || !submittedAt) {
+        return;
+      }
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        submittedAt.value = new Date().toISOString();
+
+        var formData = new FormData(form);
+        formData.append("seite", window.location.href);
+
+        submitButton.disabled = true;
+        status.textContent = "Anfrage wird übermittelt...";
+
+        fetch(webhookUrl, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors"
+        })
+          .then(function () {
+            form.reset();
+            status.textContent = "Danke. Ihre Anfrage wurde übermittelt.";
+          })
+          .catch(function () {
+            status.textContent = "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut oder schreiben Sie an info@liftpictures.com.";
+          })
+          .finally(function () {
+            submitButton.disabled = false;
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
